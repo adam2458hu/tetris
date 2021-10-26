@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+	<script src="script.js" async></script>
+</head>
+<body>
+	<div id="game">
+		<div>
+			<div id="help" class="hud">
+				<div class="title">Help</div>
+				<div class="hud-content">
+					<div>Left: &larr;</div>
+					<div>Right: &rarr;</div>
+					<div>Down: &darr;</div>
+					<div>Rotate: &uarr;</div>
+					<div>Pause: Esc</div>
+				</div>
+			</div>
+			<div id="scoring" class="hud">
+				<div class="title">Scoring</div>
+				<div class="hud-content">
+					<div><span>Soft drop:</span><span>1 x Distance</span></div>
+					<div><span>Hard drop:</span><span>2 x Distance</span></div>
+					<div><span>Single Line Clear:</span><span>100</span></div>
+					<div><span>Double Line Clear:</span><span>300</span></div>
+					<div><span>Triple Line Clear:</span><span>500</span></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div id="game-field">
+				<div id="info-box"></div>
+			</div>
+		</div>
+		<div>
+			<div id="next-block-preview" class="hud">
+				<div class="title">Next block</div>
+				<div class="hud-content"></div>
+			</div>
+			<div id="stats" class="hud">
+				<div class="title">Stats</div>
+				<div class="hud-content">
+					<div id="level">Level: 0</div>
+					<div id="lines">Lines: 0</div>
+					<div id="score">Score: 0</div>
+					<div id="high-score">High score: 0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
